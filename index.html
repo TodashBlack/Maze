@@ -22,7 +22,9 @@
               position="0 1.8 0">
     </a-entity>
 
-    <a-entity id="walls" static-body material="src: #texture-wall"></a-entity>
+    <a-entity id="walls">
+    	box.setAttribute('material', 'src: #texture-wall');
+    </a-entity>
 
     <a-grid id="ground" static-body material="src: #texture-floor"></a-grid>
 
