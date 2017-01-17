@@ -15,6 +15,9 @@
 	<a-assets>
     		<img id="texture-floor" src="floor.jpg">
     		<img id="texture-wall" src="wall.jpg">
+		<a-asset-item id="monu16-obj" src="monu16.obj"></a-asset-item>
+                <a-asset-item id="monu16-mtl" src="monu16.mtl"></a-asset-item>
+
 	</a-assets>
 	
     <a-entity id="player"
@@ -26,7 +29,7 @@
 
     <a-entity id="walls"></a-entity>
 	
-    <a-entity obj-model="obj: monu16.obj; mtl: monu16.mtl"></a-entity>
+    <a-entity obj-model="obj: #monu16-obj; mtl: #monu16-mtl"></a-entity>
 
     <a-grid id="ground" static-body material="src: #texture-floor"></a-grid>
 
