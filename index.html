@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Test Maze</title>
+	
     <script src="https://aframe.io/releases/0.3.2/aframe.js"></script>
     <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v2.6.1/dist/aframe-extras.min.js"></script>
+	
 </head>
 <body>
 <a-scene>
@@ -47,7 +49,7 @@
             };
             box = document.createElement('a-box');
             platformsEl.appendChild(box);
-            box.setAttribute('color', '#39BB82');
+            box.setAttribute('color', '#fff');
 	    box.setAttribute('material', 'src: #texture-wall;');
             box.setAttribute('width', PLATFORM_SIZE);
             box.setAttribute('height', PLATFORM_SIZE);
