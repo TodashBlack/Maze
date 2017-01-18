@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>24 Ways</title>
+    <title>Alchemist Lab</title>
 
     <script src="https://aframe.io/releases/0.3.2/aframe.js"></script>
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v2.6.1/dist/aframe-extras.js"></script>
@@ -19,7 +19,7 @@
 
     <a-entity id="player"
               camera
-              universal-controls="movementControls: automove, gamepad, keyboard"
+              universal-controls
               kinematic-body
               position="0 0 0">
         <a-light color="#fff" distance="5" intensity="0.7" type="point"></a-light>
@@ -36,20 +36,6 @@
 </a-scene>
 
 <script>
-    AFRAME.registerComponent('automove-controls', {
-        init: function () {
-            this.speed = 0.1;
-            this.isMoving = true;
-            this.velocityDelta = new THREE.Vector3();
-        },
-        isVelocityActive: function () {
-            return this.isMoving;
-        },
-        getVelocityDelta: function () {
-            this.velocityDelta.z = this.isMoving ? -this.speed : 0;
-            return this.velocityDelta.clone();
-        }
-    });
     document.querySelector('a-scene').addEventListener('render-target-loaded', function () {
         var WALL_SIZE = 5,
             WALL_HEIGHT = 3;
