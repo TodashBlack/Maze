@@ -13,12 +13,7 @@
 <body>
 <a-scene>
 
-	<a-assets>
-
-		<a-asset-item id="monu16-obj" src="monu16.obj"></a-asset-item>
-        <a-asset-item id="monu16-mtl" src="monu16.mtl"></a-asset-item>
-
-	</a-assets>
+    <a-plane static-body></a-plane>
 	
     <a-entity id="player"
               camera
@@ -26,12 +21,6 @@
               kinematic-body
               position="25 50 25">
     </a-entity>
-
-
-	
-    <a-entity obj-model="obj: #monu16-obj; mtl: #monu16-mtl" color="#AADDF0" static-body scale=" 1 1 1"></a-entity>
-
-
 
     <a-sky id="sky" color="#AADDF0"></a-sky>
 
