@@ -16,13 +16,12 @@
 	
         <img id="texture-floor" src="floor.jpg">
         <img id="texture-wall" src="wall.jpg">
-		<a-asset-item id="desk-obj" src="desk.obj"></a-asset-item>
-		<a-asset-item id="desk-mtl" src="desk.mtl"></a-asset-item>
+		<a-asset-item id="sombra" src="sombra.dae"></a-asset-item>
 
     </a-assets>
 	
 
-	<a-obj-model src="#desk-obj" mtl="#desk-mtl"></a-obj-model>
+	<a-entity collada-model="#sombra"></a-entity>
     <a-entity id="player"
               camera
               universal-controls="movementControls: automove, gamepad, keyboard"
